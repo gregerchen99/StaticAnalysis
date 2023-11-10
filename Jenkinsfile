@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        nodejs "nodejs" // Add Node.js tool
+    }
     stages {
         stage('Checkout') {
             steps {
@@ -23,3 +26,4 @@ pipeline {
         }
     }
 }
+
