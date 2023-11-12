@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/chowsowying/3x03-Project.git'
+                git branch: 'main', url: 'https://github.com/JiaJun8899/ict3x03-project.git'
             }
         }
         stage('Code Quality Check via SonarQube') {
